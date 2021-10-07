@@ -1,0 +1,105 @@
+<?версия xml="1.0"?>
+<! ОБЩЕДОСТУПНЫЙ модуль DOCTYPE
+        "-//Обход щенка//Проверка конфигурации DTD 1.3//RU"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+< имя модуля="Проверка">
+
+<!--Расширение файла должно быть java, properties, xml-->
+< имя свойства ="Расширения файлов"значение="java, свойства, xml"/>
+
+<!-- Проверяет наличие нарушений размера. -->
+<!-- Смотри http://checkstyle.sf.net/config_sizes.html -->
+< имя модуля="Длина файла"/>
+
+<!-- Проверяет наличие заголовков -->
+<!-- Смотри http://checkstyle.sf.net/config_header.html -->
+<!-- <имя модуля="Заголовок"> <имя модуля="Заголовок">-->
+<!-- <property name="headerFile" value="${checkstyle.заголовок.файл}"/> >-->
+<!-- <имя свойства="Файловые расширения" значение="java"/> <имя свойства="Файловые расширения" значение="java"/>-->
+<!-- </модуль> </модуль>-->
+
+< имя модуля="Древовидный страж">
+
+    < имя модуля="Разделительпустых строк"> ><!-- Руководство по стилю Java: Структура исходного файла -->
+        < имя свойства="токены" значение="
+ CLASS_DEF, ENUM_DEF, INTERFACE_DEF, CTOR_DEF, STATIC_INIT, INSTANCE_INIT, VARIABLE_DEF, METHOD_DEF"/>
+        < имя свойства="allowNoEmptyLineBetweenFields" значение="true"/>
+        <property name="allowMultipleEmptyLines" value="false"/>
+        <property name="allowMultipleEmptyLinesInsideClassMembers" value="false"/>
+    </module>
+
+    <!-- Checks for Naming Conventions.                  -->
+    <!-- See http://checkstyle.sf.net/config_naming.html -->
+    <module name="ConstantName"/>
+    <!--<module name="LocalFinalVariableName"/>-->
+    <module name="LocalVariableName"/>
+    <module name="MemberName"/>
+    <module name="MethodName"/>
+    <module name="PackageName">
+        <property name="format" value="^[a-z]+(\.[a-z0-9]*)*$"/>
+    </module>
+    <module name="ParameterName"/>
+    <module name="StaticVariableName"/>
+    <module name="TypeName"/>
+
+    <!-- Checks for Size Violations.                    -->
+    <!-- See http://checkstyle.sf.net/config_sizes.html -->
+    <!--<module name="LineLength"/>-->
+    <module name="MethodLength"/>
+    <module name="ParameterNumber"/>
+
+    <!-- Checks for whitespace                               -->
+    <!-- Смотри http://checkstyle.sf.net/config_whitespace.html -->
+    < имя модуля="EmptyForIteratorPad"/>
+    < имя модуля="GenericWhitespace"/>
+    < имя модуля="MethodParamPad"/>
+    < имя модуля="NoWhitespaceAfter"/>
+    < имя модуля="NoWhitespaceBefore"/>
+    < имя модуля="OperatorWrap"/>
+    < имя модуля="ParenPad"/>
+    < имя модуля="TypecastParenPad"/>
+    < имя модуля="Пробелы после"/>
+    < имя модуля="Пробел"/>
+
+    <!-- Проверка модификатора -->
+    <!-- Смотри http://checkstyle.sf.net/config_modifiers.html -->
+
+    <!-- Проверяет наличие блоков. Вы знаете, эти {} - >
+    <!-- Смотри http://checkstyle.sf.net/config_blocks.html -->
+    < имя модуля="Избегаемые блокировки"/>
+    < имя модуля="Пустой блок"/>
+    < имя модуля="LeftCurly"/>
+    < имя модуля="Нужные скобки"/>
+    < имя модуля="Правильно"/>
+
+    <!-- Проверяет наличие распространенных проблем с кодированием -->
+    <!-- Смотри http://checkstyle.sf.net/config_coding.html -->
+    <!--<имя модуля="Избегаемые условия"/><имя модуля="Избегаемые условия"/>-->
+    < имя модуля="Пустое утверждение"/>
+    < имя модуля="Код равенства"/>
+    <!--<имя модуля="Скрытое поле"/><имя модуля="Скрытое поле"/>-->
+    < имя модуля="Незаконная установка"/>
+    < имя модуля="Внутреннее назначение"/>
+    <!--<имя модуля="Магический номер"/><имя модуля="Магический номер"/>-->
+    < имя модуля="MissingSwitchDefault"/>
+    < имя модуля="SimplifyBooleanExpression"/>
+    < имя модуля="SimplifyBooleanReturn"/>
+
+    <!-- Проверяет дизайн класса -->
+    <!-- Смотри http://checkstyle.sf.net/config_design.html -->
+    <!--<имя модуля="DesignForExtension"/><имя модуля="DesignForExtension"/>-->
+    <!--<имя модуля="Окончательный класс"/><имя модуля="Окончательный класс"/>-->
+    <!--<имя модуля="HideUtilityClassConstructor"/><имя модуля="HideUtilityClassConstructor"/>-->
+    < имя модуля="Тип интерфейса"/>
+
+    <!-- Разные другие проверки. -->
+    <!-- Смотри http://checkstyle.sf.net/config_misc.html -->
+    < имя модуля="ArrayTypeStyle"/>
+    <!--<имя модуля="Конечные параметры"/><имя модуля="Конечные параметры"/>-->
+    < имя модуля="TodoComment"/>
+    < имя модуля="UpperEll"/>
+
+</модуль>
+
+</модуль>
