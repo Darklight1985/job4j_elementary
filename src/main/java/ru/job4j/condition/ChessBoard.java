@@ -13,6 +13,5 @@ public class ChessBoard {
 
     public static boolean coordBoard(int num) {
         return num > -1 && num < 8;
-
     }
 }
