@@ -23,4 +23,5 @@ public class SwitchArrayTest {
         int[] expected = {7, 4, 5, 3};
         Assert.assertArrayEquals(expected, result);
     }
+
 }
