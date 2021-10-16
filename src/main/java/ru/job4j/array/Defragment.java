@@ -2,17 +2,16 @@ package ru.job4j.array;
 
 public class Defragment {
     public static String[] compress(String[] array) {
-        for (int index = 0; index < array.length; index++) {
-            if (array[index] == null) {
-                int point = index;
-                for (int chislo = index + 1; chislo < array.length; chislo++) {
-                    if (array[chislo] != null) {
-                        int source = chislo;
-                        swap(array, point, source);
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == null) {
+                for (int j = i + 1; j < array.length; j++) {
+                    if (array[j] != null) {
+                        int source = j;
+                        swap(array, i, source);
                         break;
                     }
                 }
-                System.out.print(array[index] + " ");
+                System.out.print(array[i] + " ");
             }
         }
         return array;
