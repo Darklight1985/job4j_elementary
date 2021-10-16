@@ -6,8 +6,7 @@ public class Defragment {
             if (array[i] == null) {
                 for (int j = i + 1; j < array.length; j++) {
                     if (array[j] != null) {
-                        int source = j;
-                        swap(array, i, source);
+                        swap(array, i, j);
                         break;
                     }
                 }
