@@ -16,13 +16,4 @@ public class Machine {
    }
         return Arrays.copyOf(rsl, size);
     }
-
-    public static void main(String[] args) {
-        int money = 50;
-        int price = 21;
-        int[] result = Machine.change(money, price);
-        for (int i:result) {
-            System.out.println(i);
-        }
-    }
 }
